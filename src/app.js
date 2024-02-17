@@ -22,7 +22,7 @@ app.use("/", router);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.get("/", (req, res) => {
-  res.send("Test API is running!");
+  res.send("Test API is running! v1");
 });
 
 // send back a 404 error for any unknown api request
